@@ -1,5 +1,6 @@
 {
   "name": "webapp",
+  "homepage": "https://md-sanaul-haque-shanto.github.io/fin-game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,6 +36,8 @@
     "webpack": "4.44.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
